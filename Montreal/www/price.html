@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Омега-Херсон</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/scripts/ajquery-1.12.0.min.js"></script>
+    <script src="/scripts/popup-slide.js"></script>
+    <script src="/scripts/zindex.js"></script>
+</head>
+<body onload="g()">
+   <header class="header">
+        <div class="wrap_header row">
+            <div class="center">
+                <a id="maina" href="index.html">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Омега-Херсон</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="menu"><span></span></div>
+            <nav class="nav">
+                <ul>
+                   <li><a class="passive" href="index.html">Головна</a></li>
+                    <li><a class="passive" href="index.html#anchor1">Послуги</a>
+                        <!-- First Tier Drop Down -->
+                        <ul>
+                            <li class="drop"><a href="phyth.html">Фізична охорона</a></li>
+                            <li class="drop"><a href="signal.html">Сигналізація</a></li>
+                            <li class="drop"><a href="video.html">Відеоспостереження</a></li>
+                            <li class="drop"><a href="car.html">Супровід вантажів</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="price.html">Ціни</a></li>
+                    <li><a class="passive" href="contacts.html">Контакти</a></li>
+                    <li><a class="passive last nonedisplay" href="https://shop.omega-kherson.com.ua/">Магазин</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+    <div class="content">
+        <div class="price">
+            <h3 class="pricename">Фізична охорона</h3>
+
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1">Послуга</td>
+                    <td class="collum">Години</td>
+                    <td class="collum">Годин на місяць</td>
+                    <td class="collum">1 година<br>(грн)</td>
+                    <td class="collum">1 місяць<br>(грн)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">1 пост</td>
+                    <td class="collum">12</td>
+                    <td class="collum">365</td>
+                    <td class="collum">38</td>
+                    <td class="collum">13 870</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">1 вахта</td>
+                    <td class="collum">24</td>
+                    <td class="collum">730</td>
+                    <td class="collum">35</td>
+                    <td class="collum">25 550</td>
+                </tr>
+            </table>
+            <h6>Дані ціни змінюються відповідно до ступеня матеріальної відповідальності або вимог замовника.</h6>
+        </div>
+        <div class="price">
+            <h3 class="pricename">Сигналізація</h3>
+
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Тип об'єкта</td>
+                    <td class="collum">Вартість<br>(грн/міс.)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Квартира</td>
+                    <td class="collum">від 200</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Будинок</td>
+                    <td class="collum">300</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Офіс</td>
+                    <td class="collum">400</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Магазин</td>
+                    <td class="collum">400</td>
+                </tr>
+            </table>
+            <h3 class="pricename">Підключення сигналізації</h3>
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Кваритра</td>
+                    <td class="collum">Вартість<br>(грн)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">1-кімнатна</td>
+                    <td class="collum">6 547</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">2-кімнатна</td>
+                    <td class="collum">7 744</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">3-кімнатна</td>
+                    <td class="collum">8 652</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">4-кімнатна</td>
+                    <td class="collum">9 740</td>
+                </tr>
+            </table>
+        </div>
+        <div class="price">
+            <h3 class="pricename">Супровід вантажів</h3>
+
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Тип маршрута</td>
+                    <td class="collum">Вартість<br>(грн/день)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Херсон-Херсон</td>
+                    <td class="collum">від 960</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Україна-Херсон</td>
+                    <td class="collum">від 1 500</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Херсон-Україна</td>
+                    <td class="collum">від 1 500</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Україна-Україна</td>
+                    <td class="collum">від 2 100</td>
+                </tr>
+            </table>
+            <p style="font-size: 14px">Ціна на послуги супроводу охороняється вантажу на транспорті замовника.<br>Ціни на послуги вказані без ПДВ</p>
+        </div>                            
+    </div>
+    <footer>
+        Copyright © 2019 ПП "Омега-Херсон".<br> +38 (0552) 44-20-64
+    </footer>
+</body>
+</html>

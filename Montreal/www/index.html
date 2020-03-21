@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Омега-Херсон</title>
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="popup.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script src="/scripts/ajquery-1.12.0.min.js"></script>
+	<script src="/scripts/popup-slide.js"></script>
+	<script src="/scripts/zindex.js"></script>
+	<meta property="og:title" content="">
+	<meta property="og:site_name" content="Омега-Херсон">
+	<meta property="og:description" content="Ваша безпека - наша робота!">
+	<meta property="og:image" content="https://my.omega-kherson.com.ua/img/logo.png">
+</head>
+
+<body onLoad="move('d') g()">
+    <header class="header">
+        <div class="wrap_header row">
+            <div class="center">
+                <a id="maina" href="index.html">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Омега-Херсон</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="menu"><span></span></div>
+            <nav class="nav">
+                <ul>
+                    <li><a class="active to-top" href="#main">Головна</a></li>
+                    <li><a class="passive to-anchor1" href="#anchor1">Послуги</a>
+                        <!-- First Tier Drop Down -->
+                        <ul>
+                            <li class="drop"><a href="phyth.html">Фізична охорона</a></li>
+                            <li class="drop"><a href="signal.html">Сигналізація</a></li>
+                            <li class="drop"><a href="video.html">Відеоспостереження</a></li>
+                            <li class="drop"><a href="car.html">Супровід вантажів</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="passive" href="price.html">Ціни</a></li>
+                    <li><a class="passive" href="contacts.html">Контакти</a></li>
+                    <li><a class="passive last nonedisplay" href="https://shop.omega-kherson.com.ua/">Магазин</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+    <div id="main"></div>
+	<div class="main-img">
+		<p class="maintext">Ваша безпека - наша робота!</p>
+		<div class="down"><img src="img/arrow-down.png" alt="Down"></div>
+	</div>
+    <div class="content container">
+        <div class="row">
+            <h2 id="about-name">Про нас</h2>
+            <div class="innear-content">
+
+                <p class="text">
+                    <img src="img/main.jpg" alt="Main" id="img" align="right">
+                    Товариство з обмеженою відповідальністю <a href="index.html">«Омега-Херсон»</a> створено в 2006 році.
+                    Ліцензія на надання послуг з охорони державних та інших форм власності серія АВ № 597030 від 15.11.2011 р виданої МВС України.
+                    <br>
+                    Наше підприємство пропонує співпрацю з питань <a href="signal.html">охорони об'єктів різного ступеня складності</a>, <a href="car.html">супровід і охорони вантажів</a>, <a href="video.html">послуги пультової охорони</a>, забезпечує пропускний режим, контроль ввезення-вивезення матеріальних цінностей на підприємствах.
+                    <br>
+                    Наші співробітники має <strong>багаторічний досвід роботи</strong> в охоронній сфері, а також в правоохоронних органах і спецслужбах. Кожен співробітник проходить регулярні атестації, курси підвищення рівня підготовки, а також ретельну перевірку на профпридатність (виявлення неблагонадійних співробітників). Це дозволяє проводити операції різного рівня складності і забезпечити незмінно <strong>високу якість <a href="#anchor1">послуг</a></strong>, що надаються.
+                    <span id="anchor1" class="last-text">
+                        <br>Протягом <strong>десяти років</strong> роботи на ринку охоронних послуг наше підприємство зарекомендувало себе як досвідчений і надійний партнер.
+                    </span>
+                </p>
+            </div>
+
+        </div>
+        <h2 class="service-name" >Наші послуги</h2>
+        <div class="services">
+            <a href="phyth.html">
+                <div class="service">
+                    <h3>Фізична охорона</h3>
+                    <img src="img/life-insurance.png" alt="" class="icon">
+                    <p><b><br>Охорона:</b></p>
+                    <ul>
+                        <li> - заходів</li>
+                        <li> - підприємств</li>
+                        <li> - фізичних осіб</li>
+                    </ul>
+                    <span class="more">Більше</span>
+                </div>
+            </a>
+            <a href="signal.html">
+                <div class="service">
+                    <h3>Сигналізація</h3>
+                    <img src="img/wifi-router.png" alt="" class="icon">
+                    <p><b><br>Встановлення:</b></p>
+                    <ul>
+                        <li> - датчиків руху</li>
+                        <li> - звукових датчиків</li>
+                        <li> - системи оповіщення</li>
+                    </ul>
+                    <span class="more">Більше</span>
+                </div>
+            </a>
+            <a href="video.html">
+                <div class="service">
+                    <h3>Відеоспостереження</h3>
+                    <img src="img/cctv.png" alt="" class="icon">
+                    <p><b><br>Відеонагляд за:</b></p>
+                    <ul>
+                        <li> - домівками</li>
+                        <li> - магазинами</li>
+                        <li> - підприємствами</li>
+                    </ul>
+                    <span class="more">Більше</span>
+                </div>
+            </a>
+            <a href="car.html">
+                <div class="service">
+                    <h3>Супровід вантажів</h3>
+                    <img src="img/delivery-truck.png" alt="" class="icon">
+                    <p><b><br>Супровід:</b></p>
+                    <ul>
+                        <li> - транспорту</li>
+                        <li> - перевезення</li>
+                        <li> - супровід вантажу</li>
+                    </ul>
+                    <span class="more">Більше</span>
+                </div>
+            </a>
+        </div>
+        <h2 class="service-name" >Наші партнери</h2>
+        <div class="services">
+           
+                <div class="service">
+                    <h3>Система безпеки Омега<br><br></h3>
+                    <img class="partner-img" src="img/securitysystem.jpg" alt="">
+                </div>
+            
+                <div class="service">
+                    <h3>Об'єднання охоронних підприємств «Партнер»</h3>
+                    <img class="partner-img" src="img/partner.jpg" alt="">
+                </div>
+           
+                <div class="service">
+                    <h3>Охоронне агенство «Замок»</h3>
+                    <img class="partner-img" src="img/zamok.jpg" alt="">
+                </div>
+            
+            
+                <div class="service">
+                    <h3>Приватне підприємство «Герцог»</h3>
+                    <img class="partner-img" src="img/ger.jpg" alt="">
+                </div>
+            
+        </div>
+        <img class="footer-img" src="img/112.jpg" alt="">
+    </div>
+    <footer>
+        Copyright © 2019 ПП "Омега-Херсон".<br> +38 (0552) 44-20-64
+    </footer>
+</body>
+
+</html>

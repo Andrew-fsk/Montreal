@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Омега-Херсон</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/scripts/ajquery-1.12.0.min.js"></script>
+    <script src="/scripts/popup-slide.js"></script>
+    <script src="/scripts/zindex.js"></script>
+</head>
+
+<body onload="g()">
+    <header class="header">
+        <div class="wrap_header row">
+            <div class="center">
+                <a id="maina" href="index.html">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Омега-Херсон</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="menu"><span></span></div>
+            <nav class="nav">
+                <ul>
+                    <li><a class="passive" href="index.html">Головна</a></li>
+                    <li><a class="active" href="index.html#anchor1">Послуги</a>
+                        <!-- First Tier Drop Down -->
+                        <ul>
+                            <li class="drop"><a href="phyth.html">Фізична охорона</a></li>
+                            <li class="drop"><a  href="signal.html">Сигналізація</a></li>
+                            <li class="drop"><a href="video.html">Відеоспостереження</a></li>
+                            <li class="drop"><a class="active" href="phyth.html">Супровід вантажів</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="passive" href="price.html">Ціни</a></li>
+                    <li><a class="passive" href="contacts.html">Контакти</a></li>
+                    <li><a class="passive last nonedisplay" href="https://shop.omega-kherson.com.ua/">Магазин</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+    <div class="content">
+        <h2 class="videoname">Супровід вантажів</h2>
+        <p class="text">
+            <img id="textimg" src="img/ohrana-gruza.jpg" alt="">
+            <span class="fix"></span>
+            ПП <a href="index.html">"Омега-Херсон"</a> надає послугу <a href="car.html">супроводу (забезпечення безпеки) перевезення будь-яких вантажів</a>, у тому числі цінних, по всій території України будь-яким видом транспорту (автомобільним, повітряним, залізничним, водним). Для кожного маршруту руху розробляється індивідуальна схема руху, із зазначенням місць відпочинку, АЗС, СТО, постів ДАІ, пунктів медичної допомоги. Клієнту надається повна інформація про рух (місцезнаходження і часу) вантажу. Прийом-передача вантажу здійснюється за принципом «з рук в руки».
+
+            Супровід вантажів здійснюється співробітниками, оснащеними спецзасобами і спецзахистом. Всі співробітники, що працюють в підрозділі по супроводженню вантажів, проходять психологічне тестування і тестування на здатність протистояти великим навантаженням.
+        </p>
+        <p>Крім власне охорони вантажів, ми готові забезпечити ряд додаткових послуг, покликаних збільшити ефективність своєчасної доставки вантажів:</p>
+        <ul>
+            <li>отримання оперативної інформації щодо вантажу, а також розкриття можливих зв'язків вантажоодержувача з кримінальними структурами;</li>
+            <li>організація прихованого контролю (відеозйомки) за вантажем, що перевозиться (із залученням ресурсів власного детективного агентства);</li>
+            <li>дозвіл юридичним шляхом конфліктних ситуацій, пов'язаних з фактами незаконних дій і вимагання;</li>
+            <li>розслідування випадків шахрайства з боку вантажоодержувача;</li>
+            <li>доарбітражне врегулювання спірних питань та надання юридичної допомоги (послуги адвоката);</li>
+            <li>проведення прихованої відеозйомки під час транспортування вантажу.</li>
+        </ul>
+        <div class="price">
+            <h3 class="pricename">Наші ціни</h3>
+
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Тип маршрута</td>
+                    <td class="collum">Вартість<br>(грн/день)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Херсон-Херсон</td>
+                    <td class="collum">від 960</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Україна-Херсон</td>
+                    <td class="collum">від 1 500</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Херсон-Україна</td>
+                    <td class="collum">від 1 500</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Україна-Україна</td>
+                    <td class="collum">від 2 100</td>
+                </tr>
+            </table>
+            <p style="font-size: 14px">Ціна на послуги супроводу охороняється вантажу на транспорті замовника.<br>Ціни на послуги вказані без ПДВ</p>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2019 ПП "Омега-Херсон".<br> +38 (0552) 44-20-64
+    </footer>
+</body>
+
+</html>

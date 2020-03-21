@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Омега-Херсон</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="/scripts/ajquery-1.12.0.min.js"></script>
+    <script src="/scripts/popup-slide.js"></script>
+    <script src="/scripts/zindex.js"></script>
+</head>
+
+<body onload="g()">
+    <header class="header">
+        <div class="wrap_header row">
+            <div class="center">
+                <a id="maina" href="index.html">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Омега-Херсон</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="menu"><span></span></div>
+            <nav class="nav">
+                <ul>
+                   <li><a class="passive" href="index.html">Головна</a></li>
+                    <li><a class="active" href="index.html#anchor1">Послуги</a>
+                        <!-- First Tier Drop Down -->
+                        <ul>
+                            <li class="drop"><a href="phyth.html">Фізична охорона</a></li>
+                            <li class="drop"><a class="active" href="signal.html">Сигналізація</a></li>
+                            <li class="drop"><a href="video.html">Відеоспостереження</a></li>
+                            <li class="drop"><a href="car.html">Супровід вантажів</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="passive" href="price.html">Ціни</a></li>
+                    <li><a class="passive" href="contacts.html">Контакти</a></li>
+                    <li><a class="passive last nonedisplay" href="https://shop.omega-kherson.com.ua/">Магазин</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+    <div class="content">
+        <h2 class="phythname">Сигналізація</h2>
+        <p>
+            <img id="textimg" src="img/signal.jpg" alt="">
+            <span class="fix"></span>
+            <strong>Пультова охорона</strong> - це оповіщення і запобігання проникнення, нападу, пожежі і всіляких аварій на об'єкті, що охороняється з використанням пристроїв сигналізації та напрямком на об'єкт мобільної групи реагування в разі спрацювання тривожного сигналу на пульті централізованого спостереження.<br><br>
+            Об'єкти клієнта оснащуються охоронною, тривожної та пожежної системами сигналізації. Встановлюване обладнання супроводжується <strong>сертифікатами</strong>, елементи пожежної сигналізації додатково проходять сертифікацію в <strong>МНС України.</strong> При спрацьовуванні сигналізації сигнал передається на пульт охорони по одному з доступних інформаційних каналів, серед яких телефонні лінії, радіоканал, Інтернет або мобільний зв'язок.<br>
+            Фахівці мобільних груп мають <strong>високий професійний рівень,</strong> як і службовці технічної підтримки - це забезпечує підвищену ефективність здійснення заходів, пов'язаних з охороною об'єкта;
+            матеріальна відповідальність охоронного підприємства застрахована;<br>
+            Фахівці ПП "Омега-Херсон" протягом <strong>п'яти хвилин</strong> індивідуально розроблять проект об'єкту, що охороняється, дадуть експертну оцінку, рекомендації щодо поліпшення ступеня захисту об'єкта. Проведуть консультацію по установці технічних пристосувань охорони. Допоможуть<strong>максимально</strong> оптимізувати витрати на охорону.</p>
+        <div class="price">
+            <h3 class="pricename">Наші ціни</h3>
+
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Тип об'єкта</td>
+                    <td class="collum">Вартість<br>(грн/міс.)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Квартира</td>
+                    <td class="collum">від 200</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Будинок</td>
+                    <td class="collum">300</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Офіс</td>
+                    <td class="collum">400</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">Магазин</td>
+                    <td class="collum">400</td>
+                </tr>
+            </table>
+            <h3 class="pricename">Підключення</h3>
+            <table id="tableprice">
+                <tr class="rowtable nametable">
+                    <td class="collum1 signal-cell">Кваритра</td>
+                    <td class="collum">Вартість<br>(грн)</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">1-кімнатна</td>
+                    <td class="collum">6 547</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">2-кімнатна</td>
+                    <td class="collum">7 744</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">3-кімнатна</td>
+                    <td class="collum">8 652</td>
+                </tr>
+                <tr class="rowtable">
+                    <td class="collum1">4-кімнатна</td>
+                    <td class="collum">9 740</td>
+                </tr>
+            </table>
+            <h2>Ваша безпека - наша робота!</h2>
+        </div>
+        <div class="discount">
+            <h3>Увага!</h3>
+            <div class="discount-content">
+                <div class="discount-text">
+                    <p>Встигни замовити сигналізацію до кінця місяця <br> і отримай <b>ЗНИЖКУ <span> -50% </span> </b> на встановлення обладнання!</p>
+                </div>
+                <div class="discount-image"><img src="img/homeprotect-spacecontrol-doorprotect-black-1.png" alt=""></div>
+                <div class="fix"></div>
+                <a href="contacts.html">Детальніше</a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        Copyright © 2019 ПП "Омега-Херсон".<br> +38 (0552) 44-20-64
+    </footer>
+</body>
+
+</html>

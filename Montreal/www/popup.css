@@ -1,0 +1,127 @@
+/*.back-layer {*/
+    /*pointer-events: none;*/
+    /*opacity: 0;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+/*}*/
+/*.back-layer.menu-open {*/
+    /*pointer-events: all;*/
+    /*z-index: 100;*/
+    /*-webkit-animation: back-layer 0.5s forwards;*/
+    /*animation: back-layer 0.5s forwards;*/
+/*}*/
+/*.back-layer.back-transition {*/
+    /*opacity: 1;*/
+    /*z-index: 100;*/
+    /*-webkit-animation: hide 0.6s forwards;*/
+    /*animation: hide 0.6s forwards;*/
+/*}*/
+@-webkit-keyframes back-layer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes back-layer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes hide {
+    100% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+}
+@keyframes hide {
+    100% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+    }
+}
+.close-popup {
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+.close-popup.menu-open {
+    pointer-events: all;
+    z-index: 103;
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+.popup-slider {
+    pointer-events: none;
+    z-index: 101;
+    position: fixed;
+}
+.popup-slider.menu-open {
+    pointer-events: all;
+}
+.popup-slider.menu-right {
+    bottom: 0;
+    right: 0;
+    transform: translateX(120%);
+    transition: transform 0.4s;
+}
+.popup-slider.menu-right.menu-open {
+    transform: translateX(0);
+}
+.popup-slider.menu-left {
+    top: 0;
+    left: 0;
+    transform: translateX(-120%);
+    transition: transform 0.4s;
+}
+.popup-slider.menu-left.menu-open {
+    transform: translateX(0);
+}
+.popup-slider.menu-top {
+    top: 0;
+    left: 0;
+    transform: translateX(-120%);
+    transition: transform 0.4s;
+}
+.popup-slider.menu-top.menu-open {
+    transform: translateX(0);
+}
+.popup-slider.menu-fade {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s;
+}
+.popup-slider.menu-fade.menu-open {
+    opacity: 1;
+}
+body {
+    width: 100vw;
+    max-width: 100%;
+}
+.header {
+    width: 100%;
+}
